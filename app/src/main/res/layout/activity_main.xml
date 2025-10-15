@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#FFDEAD"
     tools:context=".MainActivity">
 
     <EditText
@@ -12,7 +13,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_a"
         android:layout_margin="20dp"
-        android:hint="Enter a " />
+        android:hint="Enter a "
+        android:backgroundTint="#3F51B5"
+        android:textColor="#000000"
+        android:textColorHint="#757575"
+        android:padding="12dp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,42 +28,54 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/btn_add"
             android:layout_margin="4dp"
-            android:text="+"/>
+            android:text="+"
+            android:backgroundTint="#D2691E"
+            android:textColor="#FFFFFF"/>
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/btn_sub"
             android:layout_margin="4dp"
-            android:text="-"/>
+            android:text="-"
+            android:backgroundTint="#D2691E"
+            android:textColor="#FFFFFF"/>
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/btn_mult"
             android:layout_margin="4dp"
-            android:text="x"/>
+            android:text="x"
+            android:backgroundTint="#D2691E"
+            android:textColor="#FFFFFF"/>
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/btn_div"
             android:layout_margin="4dp"
-            android:text="/"/>
+            android:text="/"
+            android:backgroundTint="#D2691E"
+            android:textColor="#FFFFFF"/>
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:id="@+id/btn_pot"
             android:layout_margin="4dp"
-            android:text="^" />
+            android:text="^"
+            android:backgroundTint="#D2691E"
+            android:textColor="#FFFFFF"/>
     </LinearLayout>
 
     <TextView
@@ -68,6 +85,8 @@
         android:textSize="24sp"
         android:layout_margin="20dp"
         android:id="@+id/result_tv"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="#212121"
+        android:background="#DEB887"/>
 
 </LinearLayout>
