@@ -33,6 +33,12 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
         etA=findViewById(R.id.et_a)
         etB=findViewById(R.id.et_b)
         resultTv=findViewById(R.id.result_tv)
+
+        btnAdd.setOnClickListener(this)
+        btnSub.setOnClickListener(this)
+        btnMult.setOnClickListener(this)
+        btnDiv.setOnClickListener(this)
+        btnPot.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -48,10 +54,10 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
                 result=a-b
             }
             R.id.btn_mult ->{
-                result=a+b
+                result=a*b
             }
             R.id.btn_div ->{
-                result=a*b
+                result=a/b
             }
             R.id.btn_pot ->{
                 result=a.pow(b)
